@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block title %}
+    <title>Here is your title</title>
+    {% endblock %}
+
+    <!-- Bootstrap -->
+    <link href="{% static 'machines/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- here for IE8, IE9 and IE10 compatible -->
+  </head>
+
+  <body>
+    <div class="container">
+    {% block content %}  
+    <h1>Hello, world!</h1>
+    {% endblock %}
+    </div>
+    <!-- jQuery (necessary for Bootstrap's Javascript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins, or include individual files as needed -->
+  </body>
+</html>

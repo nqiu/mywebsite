@@ -1,0 +1,17 @@
+{% extends "machines/base.html" %}
+
+{% block title %}
+<title>Index Page</title>
+{% endblock %}
+
+
+{% block content %}
+<h1>Home Page</h1>
+<hr />
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <p> To use this system, you need to <a href="{% url 'machines:signin' %}">Signin</a>.</p>
+    <p> If you have no an account, please click <a href="{% url 'machines:signup' %}">here</a> to get one.</p>
+  </div>
+</div>
+{% endblock %}
